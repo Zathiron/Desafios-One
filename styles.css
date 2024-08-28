@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px; /* Para mejor margen en dispositivos pequeños */
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Limita el ancho máximo en dispositivos grandes */
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: none;
+    box-sizing: border-box; /* Asegura que padding y border no agranden el área */
+}
+
+input[type="number"] {
+    width: 60px; /* Ajuste de ancho para una mejor vista en móviles */
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    width: 45%; /* Asegura que los botones se alineen correctamente */
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 10px;
+        width: 100%; /* Botones apilados en dispositivos pequeños */
+        margin-bottom: 10px; /* Espacio entre botones en dispositivos móviles */
+    }
+}
